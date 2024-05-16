@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html>
 
+<body>
+
+<h1>이미지 태그 실습</h1>
+
+<h3>외부 이미지 삽입</h3>
+
+<!-- 외부 이미지 -->
+<!-- 외부 이미지 삽입 연습 -->
+<!--외부 호스트 정보까지 포함된 전체 이미지 URL을 src에 삽입-->
+<img alt="외부 이미지"
+     src="https://i.namu.wiki/i/qdveDyeD8Jn7ETluQSRwE3VOtaVw6bsZw1JcKqV-Gnwiqncp2t__Fm5hIdhvggqOWpFsrgWqN6xMgYom6TUaJLK0ItqDhuNUgZeVHe7ktwy1fjlxA0lDEyEH46sn5aKM13djPfKcwOrrrPssdoQFtA.webp"
+     width="320">
+<!--width, heigth 속성 : 출력사이즈, 웹표준상으론 추천하지 않음-->
+
+<h3>내부 이미지 삽입</h3>
+<!-- 내부 이미지 (파일 경로에 실제 이미지 파일 경로를 넣어야 함) -->
+<!-- 내부 이미지를 절대경로로 넣기 -->
+<img alt="내부 이미지 : 절대경로"
+     src="/ex01-renewal/images/penguins.jpg"
+     title="내부 이미지: 절대경로"
+     width="320"><br>
+
+<!-- 내부 이미지를 상대경로로 넣기 -->
+<img alt="내부 이미지 : 상대경로"
+     src="../images/penguins.jpg"
+     title="내부 이미지: 상대경로"
+     width="320"/>
+
+<!-- 존재하지 않는 이미지 넣기. alt 속성 확인 -->
+<img src="notfound.jpg" alt="이미지를 찾을 수 없습니다.">
+
+
+<h3>주요 속성들</h3>
+<ul>
+    <li><b>src</b>: 이미지 파일의 경로를 지정</li>
+    <li><b>alt</b>: 이미지 파일이 없을 경우 대체 텍스트를 지정</li>
+</ul>
+
+</body>
+
 <head>
     <title>이미지 태그 실습</title>
 </head>
-
-<body>
-
-    <h1>이미지 태그 실습</h1>
-
-    <h3>외부 이미지 삽입</h3>
-
-    <!-- 외부 이미지 -->
-    <!-- 외부 이미지 삽입 연습 -->
-
-    <h3>내부 이미지 삽입</h3>
-
-    <!-- 내부 이미지 (파일 경로에 실제 이미지 파일 경로를 넣어야 함) -->
-    <!-- 내부 이미지를 절대경로로 넣기 -->
-    <!-- 내부 이미지를 상대경로로 넣기 -->
-    <!-- 존재하지 않는 이미지 넣기. alt 속성 확인 -->
-
-    <h3>주요 속성들</h3>
-    <ul>
-        <li><b>src</b>: 이미지 파일의 경로를 지정</li>
-        <li><b>alt</b>: 이미지 파일이 없을 경우 대체 텍스트를 지정</li>
-    </ul>
-
-</body>
 
 </html>
