@@ -1,8 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <meta charset="UTF-8">
     <title>CSS Display 실습</title>
+    <style>
+        .block-display {
+
+        }
+
+        /* inline-display */
+        .inline-display {
+            display: inline;
+            background-color: lightcoral;
+        }
+
+        /* inline-block-display */
+        .inline-block-display {
+            display: inline-block; /* 강제로 display 속성 변화 */
+            background-color: lightgreen;
+            margin-bottom: 30px;
+            padding: 10px;
+        }
+
+        .none-display {
+            display: none;
+            /* 공간을 점유하지 않는다. */
+        }
+
+        img.hidden, img.none, img.normal {
+            width: 50%;
+        }
+        /* visibility: hidden */
+        img.hidden {
+            visibility: hidden;
+        }
+        /* display: none
+            -> 공간 점유 자체를 하지 않음 */
+        img.none {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>

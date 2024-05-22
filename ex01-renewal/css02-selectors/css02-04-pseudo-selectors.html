@@ -1,31 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <meta charset="UTF-8">
     <title>CSS 가상 클래스 실습</title>
+    <style>
+        /* 가상 선택자
+            요소의 특정 상태에 부여되는 선택자
+            단독으로 사용될 수는 없다.
+            셀렉터의 상태 */
+        /* 반응 선택자 - 순서에 유의해야함 */
+        /*link, visited 는 a 태그 에서만 사용*/
+
+        a:link { /* 아직 방문하지 않은 링크 */
+            color: green; /* 링크의 색상을 검은색으로 설정 */
+            text-decoration: none;
+        }
+
+        a:visited { /* 이미 방문한 링크 */
+            color: gray;
+            font-weight: bold;
+            text-decoration: none; /* 밑줄 제거 */
+        }
+
+        a:active { /* 클릭 상태 */
+            color: blue;
+        }
+
+        a:hover { /*마우스가 올라 갔을 때*/
+            color: red;
+            text-decoration-line: underline;
+        }
+
+        /* 상태 선택자 : 입력 양식의 상태에 따라 발생하는 선택자 */
+        input:focus {
+            background-color: aquamarine;
+        }
+
+        input:disabled {
+            background-color: lavenderblush;
+        }
+
+        input[type="checkbox"]:checked + label {
+            color: red;
+        }
+
+        /* 구조 선택자 : 등장하는 순서에 따른 선택. 주로 형제관계 */
+        ul#list > li:nth-child(2n) {
+            color: green;
+        }
+
+        ul#list > li:nth-child(2n+1) {
+            color: lightgreen;
+        }
+
+        ul#list > li:first-child {
+            color: red;
+        }
+
+        ul#list > li:last-child {
+            color: blue;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>CSS 가상 클래스 실습</h1>
+<h1>CSS 가상 클래스 실습</h1>
 
-    <h2>반응 선택자 실습</h2>
-    <a href="#">링크 (hover 실습)</a>
+<h2>반응 선택자 실습</h2>
+<a href="#">링크 (hover 실습)</a>
 
-    <h2>상태 선택자 실습</h2>
-    <input type="text" placeholder="텍스트 입력 (focus 실습)">
-    <input type="text" placeholder="텍스트 입력 (disabled 실습)" disabled>
-    <input type="checkbox" id="checkbox">
-    <label for="checkbox">체크박스 (checked 실습)</label>
+<h2>상태 선택자 실습</h2>
+<input placeholder="텍스트 입력 (focus 실습)" type="text">
+<input disabled placeholder="텍스트 입력 (disabled 실습)" type="text">
+<br>
+<input id="checkbox" type="checkbox">
+<label for="checkbox">체크박스 (checked 실습)</label>
 
-    <h2>구조 선택자 실습</h2>
-    <ul id="list">
-        <li>첫 번째 형제</li>
-        <li>두 번째 형제</li>
-        <li>세 번째 형제</li>
-        <li>네 번째 형제</li>
-        <li>다섯 번째 형제</li>
-        <li>여섯 번째 형제</li>
-    </ul>
+<h2>구조 선택자 실습</h2>
+<ul id="list">
+    <li>첫 번째 형제</li>
+    <li>두 번째 형제</li>
+    <li>세 번째 형제</li>
+    <li>네 번째 형제</li>
+    <li>다섯 번째 형제</li>
+    <li>여섯 번째 형제</li>
+</ul>
 </body>
 
 </html>

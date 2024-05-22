@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.title {
+    color: white;
+    width: 250px;
+    height: 150px;
+    background-image: url('https://www.himedia.co.kr/home/uploads/202106171816231238239133.jpg');
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "맑은 고딕", "돋움";
+    font-size: 0.75em;
+    color: #333;
+}
+#login-form {
+    width: 180px;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+}
+label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+input[type=image] {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
